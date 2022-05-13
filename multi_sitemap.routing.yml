@@ -1,0 +1,57 @@
+multi_sitemap.render:
+  path: '/estimation-sitemap.xml'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\multi_sitemap\Controller\MultiSitemapController::build'
+  requirements:
+    _permission: 'access content'
+
+
+multi_sitemap.render2:
+  path: '/renvovation-maison-sitemap.xml'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\multi_sitemap\Controller\MultiSitemapController::RenovBuild'
+  requirements:
+    _permission: 'access content'
+    
+multi_sitemap.render3:
+  path: '/renovovation-appartement-sitemap.xml'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\multi_sitemap\Controller\MultiSitemapController::RenovAppart'
+  requirements:
+    _permission: 'access content'
+    
+multi_sitemap.render4:
+  path: '/isolation-exterieur-sitemap.xml'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\multi_sitemap\Controller\MultiSitemapController::IsolaExterieur'
+  requirements:
+    _permission: 'access content'
+    
+multi_sitemap.render5: 
+  path: '/sitemap-93.xml'
+  defaults:
+    _title: 'sitemap-93'
+    _controller: '\Drupal\multi_sitemap\Controller\MultiSitemapController::SiteMap93'
+  requirements:
+    _permission: 'access content'
+    
+multi_sitemap.render6: 
+  path: '/sitemap-92.xml'
+  defaults:
+    _title: 'sitemap-92'
+    _controller: '\Drupal\multi_sitemap\Controller\MultiSitemapController::SiteMap92'
+  requirements:
+    _permission: 'access content'
+
+
+multi_sitemap.cron:
+  path: '/multi-sitemap/cron/{entity_type_id}/{bundle}'
+  defaults:
+    _title: 'Cron'
+    _controller: '\Drupal\multi_sitemap\Controller\MultiSitemapController::cron'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,6 @@
+name: Multi sitemap
+type: module
+description: permet de generer les fichiers map en function du type d&#039;entité et des bundles
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
