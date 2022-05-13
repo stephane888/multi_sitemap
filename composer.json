@@ -1,12 +1,14 @@
 {
     "name": "stephane888/multi_sitemap",
-    "type": "drupal-custom-module",
+    "type": "drupal-module-custom",
     "license": "MIT",
+    "description": "Multi sitemap",
     "authors": [
         {
             "name": "stephane888",
             "email": "kksasteph888@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {}
 }
